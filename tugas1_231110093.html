@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO IRFAN AWALUDIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #2b2b2b;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #c3c3c4;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 35%;
+            object-fit: cover;
+        }
+        h1 {
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        .role {
+            font-style: italic;
+            color: #666;
+            margin-top: 0;
+        }
+        section {
+            margin: 40px 0;
+        }
+        h2 {
+            border-bottom: 2px solid #0008ff;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #a5a5a5;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #b7b7b7;
+        }
+        .portfolio-img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0140ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!--Foto Profil-->
+            <img src="irfan_formal.jpg" alt="Profile Picture" class="profile-img">
+            
+            <!--Nama-->
+            <h1>Irfan Awaludin</h1>
+            
+            <!--Role-->
+            <p class="role">Web Developer</p>
+            
+            <!--Deskripsi Singkat-->
+            <p>hi. i'm irfan. i'm a web developer. i have a passion for web developmeny and love to create for web and mobile devices.
+                i'm a full-stack developer with a focus on front-end development. i have experience working with modern web technologies such as HTML, CSS, JavaScript, React, and Node Jd. i'm always looking for new challenges and opportunities to grow as a developer </p>
+        </header>
+
+        <!--Skills-->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Organization</li>
+                <li>MySQL</li>
+                <li>Futsal Players</li>
+            </ul>
+        </section>
+
+        <!--Project dan pengalaman-->
+        <section id="projects">
+            <h2>Projects & Experience</h2>
+            <ul>
+                <li>Database - Sports Competition System Database</li>
+                <li>FTI Faculty PKKMB Committee Event Division</li>
+                <li>Webinar Committee BEM FTI PDD Division</li>
+                <li>2nd Place of FIKOM UMBY Futsal Tournament</li>
+                <li>1st Place of TirthenCUP Tournament 2025</li>
+            </ul>
+        </section>
+
+        <!--Portfolio-->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Experience</th>
+                        <th>Preview</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Database Sistem kompetisi olahraga</td>
+                        <td><img src="database.jpg" alt="Database" class="portfolio-img"></td>
+                        <td>Organize everything from the tournament from start to finish</td>
+                    </tr>
+                    <tr>
+                        <td>Panitia PKKMB UMBY 2024</td>
+                        <td><img src="pkkmb.jpg" alt="panitia pkkmb" class="portfolio-img"></td>
+                        <td>2024 Faculty PKKMB Committee joins the Events Division</td>
+                    </tr>
+                    <tr>
+                        <td>Panitia Webinar BEM FTI</td>
+                        <td><img src="webinar.jpg" alt="Webinar" class="portfolio-img"></td>
+                        <td>BEM FTI PDD Division Webinar Committee</td>
+                    </tr>
+                    <tr>
+                        <td>Juara 2 FIKOM UMBY Cup 2024</td>
+                        <td><img src="juara2.jpg" alt="Juara 2" class="portfolio-img"></td>
+                        <td>Representing FTI as 2nd place winner in the 2024 FIKOM Cup UMBY tournament</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Kontak-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!--Sosial media-->
+        <section id="social">
+            <h2>Social Media</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/irfan-awaludin-831251303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+                <a href="https://www.tiktok.com/@y01pnn?_t=ZS-8urwroDeHgI&_r=1">Tiktok</a>
+                <a href="https://wa.me/6289526854302">WhatsApp</a>
+                <a href="https://instagram.com/i4m.pan">Instagram</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
