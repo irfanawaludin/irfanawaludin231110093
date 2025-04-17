@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #search {
+            background: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 30em;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+        }
+        .title h1 {
+            font-size: 38px;
+        }
+        .title p {
+            font-size: 18px;
+        }
+        .title hr {
+            width: 50%;
+            margin: 20px auto;
+            opacity: 0.5;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+        button {
+            padding: 8px 25px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+        button:hover {
+            background-color: #e68900;
+        }
+
+        .car-card {
+            margin-bottom: 20px;
+            max-height: 500px; /* Sesuaikan nilai ini sesuai kebutuhan Anda */
+            display: flex;
+        }
+
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="search">
+        <div class="title">
+            <h1>Banjarnegara Rental Motor</h1>
+            <p>Tempat sewa motor terbaik hanya di sini</p>
+            <hr />
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="origin">Dari</label>
+                <select name="origin" id="origin" class="form-control">
+                    <option value="JKT">Jakarta</option>
+                    <option value="BNA">Purwokerto</option>
+                    <option value="BDO">Bandung</option>
+                    <option value="DPS">Bali</option>
+                    <option value="BNA">Banjarnegara</option>
+                    <option value="BNA">Purbalingga</option>
+                    <option value="BNA">Jogja</option>
+                    <option value="BNA">Wonosobo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Ke</label>
+                <select name="destination" id="destination" class="form-control">
+                    <option value="JKT">Jakarta</option>
+                    <option value="BNA">Purwokerto</option>
+                    <option value="BDO">Bandung</option>
+                    <option value="DPS">Bali</option>
+                    <option value="BNA">Banjarnegara</option>
+                    <option value="BNA">Purbalingga</option>
+                    <option value="BNA">Jogja</option>
+                    <option value="BNA">Wonosobo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Tanggal</label>
+                <input type="date" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="passenger">Jumlah</label>
+                <input type="number" class="form-control"/>
+            </div>
+            <button class="btn">Cari</button>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 car-card">
+                <div class="card">
+                    <img class="card-img-top" src="aerox.jpg" alt="Aerox" style="object-fit: cover; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aerox</h5>
+                        <p class="card-text">Bergaya dan bertenaga untuk berkendara di kota.</p>
+                        <p><strong>Rp. 150.000/day</strong></p>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 car-card">
+                <div class="card">
+                    <img class="card-img-top" src="nmax.jpg" alt="Nmax" style="object-fit: cover; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">NMAX</h5>
+                        <p class="card-text">Nyaman dan hemat bahan bakar untuk perjalanan jauh.</p>
+                        <p><strong>Rp. 180.000/day</strong></p>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 car-card">
+                <div class="card">
+                    <img class="card-img-top" src="vario.jpg" alt="Vario" style="object-fit: cover; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Vario</h5>
+                        <p class="card-text">Praktis dan mudah bermanuver di lalu lintas.</p>
+                        <p><strong>Rp. 120.000/day</strong></p>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 car-card">
+                <div class="card">
+                    <img class="card-img-top" src="pcx.jpg" alt="Pcx" style="object-fit: cover; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">PCX</h5>
+                        <p class="card-text">Scooter premium dengan fitur-fitur canggih.</p>
+                        <p><strong>Rp. 190.000/day</strong></p>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
